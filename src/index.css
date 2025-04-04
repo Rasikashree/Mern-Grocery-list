@@ -1,0 +1,125 @@
+/* Overall Dark Color Scheme */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #121212;             /* Dark background */
+  color: #e0e0e0;                  /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Container Style */
+.container {
+  background: #1e1e1e;             /* Slightly lighter dark background */
+  padding: 40px;
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 32px;
+  color: #ffeb3b;                 /* Yellow color for title */
+  text-shadow: 0 0 15px #ffeb3b;
+  margin-bottom: 25px;
+  transition: color 0.3s;
+}
+
+h1:hover {
+  color: #ff4081;                 /* Vibrant pink on hover */
+}
+
+/* Input Area Styling */
+.input-area {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-area input,
+.input-area select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  background: #333355;
+  color: #ffffff;
+  min-width: 140px;
+  transition: background 0.3s, border 0.3s;
+}
+
+.input-area input:focus,
+.input-area select:focus {
+  outline: 2px solid #ff4081;
+}
+
+.input-area button {
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #ff4081, #ff9100);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.input-area button:hover {
+  background: linear-gradient(135deg, #ff9100, #ff4081);
+  transform: scale(1.05);
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* Item Card Styling */
+.item-card {
+  background: linear-gradient(120deg, #3a3a5a, #46468a);
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s;
+}
+
+.item-card:hover {
+  background: linear-gradient(120deg, #46468a, #3a3a5a);
+  transform: scale(1.02);
+}
+
+/* Change Text Color on Hover within Items */
+.item-card div:hover {
+  color: #ff4081;               /* Change text to vibrant pink on hover */
+}
+
+/* Button within Item Card */
+.item-card button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff4081;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.item-card button:hover {
+  color: #ffeb3b;               /* Change button color on hover */
+  transform: scale(1.2);
+}
